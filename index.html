@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: blanchedalmond;">
+    <div id="navbar">
+        <img id="logonav" src="profile.jpeg" alt="logo">
+        <p style="color: azure; font-family: 'Times New Roman', Times, serif;" ># Testando página web # </p>
+    </div>
+    <img id="banner" src="codingimage.jpg" alt="Banner" height="240">
+    <h1>
+        Sobre Vinícius</h1>
+
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0;">
+                Atualmente estou estudando Linux e programação.
+
+
+            </p>
+            <p>
+                Estou aprendendo Python, JavaScript, HTML & CSS, entre outros.
+            <ul>
+                <li>
+                    <a href="https://github.com/Vinicius-R-PeoplePy/" target="_blank">
+                        Github</a>
+                </li>
+                <br>
+                <li>
+                    <a href="https://www.linkedin.com/in/vinícius-rodrigues-71a5851b8/" target="_blank">
+                        Linkedin</a>
+                </li>
+            </ul>
+            </p>
+
+        </div>
+        <div id="image-container">
+            <div class="row">
+                <div class="column">
+                    <img src="python-logo.png" alt="Python" class="piecesimage">
+                </div>
+                <div class="column">
+                    <img src="js-logo.png" alt="JavaScript" class="piecesimage">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="css-logo.png" alt="CSS" class="piecesimage">
+                </div>
+                <div class="column">
+                    <img src="html5-logo.png" alt="HTML" class="piecesimage">
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Contatos:</h2>
+    <div id="jobs">
+        <div>
+        <a href="mailto:viniciuspeoplepy@gmail.com?subject=Frontend" class="apply" target="_blank">Entre em contato</a>
+        <h3 class="job-role">Gmail</h3>
+        <img id="icones" src="gmail-icone.png" alt="gmail">
+    </div>
+        <br>
+        <div id="jobs">
+            <div>
+                <a href="https://wa.me/+5524988373517"class="apply" target="_blank">Entre em contato</a>
+                <h3 class="job-role">WhatsApp</h3>
+                <img id="icones" src="whatsapp-logo.png" alt="whatsapp">
+            </div>
+        </div>
+        <br>
+        
+        <div id="jobs">
+            <div>
+                <a href="https://discord.com/users/o.v._" class="apply" target="_blank">Entre em contato</a>
+                <h3 class="job-role">Discord</h3>
+                <img id="icones" src="discord-logo.png" alt="discord">
+            </div>
+        </div>
+        <div id="notebook">
+            <h2>Notebook</h2>
+            <textarea id="noteInput" rows="4" cols="50"></textarea>
+            <button onclick="saveNote()">Save Note</button>
+            <button id="clearButton" onclick="clearNotes()">Clear Notes</button>
+            <ul id="noteList"></ul>
+    
+            <script>
+                function saveNote() {
+                    var noteInput = document.getElementById('noteInput');
+                    var noteList = document.getElementById('noteList');
+    
+                    var note = noteInput.value;
+    
+                    // Create a new list item
+                    var listItem = document.createElement('li');
+                    listItem.appendChild(document.createTextNode(note));
+    
+                    // Append the new item to the note list
+                    noteList.appendChild(listItem);
+    
+                    // Clear the input field
+                    noteInput.value = '';
+                }
+    
+                function clearNotes() {
+                    var noteList = document.getElementById('noteList');
+    
+                    // Clear all notes in the list
+                    noteList.innerHTML = '';
+                }
+            </script>
+        </div>
+        
+
+    <div id="footer">
+        <span class="copyright">© 2023</span>
+    </div>
+</div>
+</body>
+
+</html>

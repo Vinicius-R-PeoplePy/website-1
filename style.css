@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar { 
+    padding: 8px;
+    margin: 0;
+    background-color: indigo;
+}
+
+h1 {
+    text-align: center;
+}
+
+#banner {
+    object-fit: cover;
+}
+
+#logonav {
+    height:70px;
+    border-radius: 50%;
+}
+
+h1 { 
+    text-align: center;
+    color: darkblue;
+}
+
+#banner {
+    width: 100%;
+}
+
+#about {
+    display: flex; 
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+#description {
+    width: 50%;
+    padding-right: 8px;
+}
+
+#pieces {
+    width: 50%;
+}
+
+.location { 
+    color: gray;
+    margin-bottom: 16px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#jobs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: auto;
+}
+
+h3 {
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.apply {
+    float: right;
+}
+
+#footer { 
+    background-color: ghostwhite;
+    padding: 8px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#footer-links { 
+    list-style: none;
+    text-align: center;
+}
+
+#footer-links li {
+    display: inline;
+    margin: 0 16px;
+}
+
+#copyright {
+    color: gray;
+}
+
+#icones {
+    max-width: 30px;
+}
+
+
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.column {
+    flex: 8;
+    padding: 30px;
+    text-align: center;
+    max-width: 10px; /* Set a maximum width of 10px for each column */
+}
+
+.piecesimage {
+    border-radius: 150px;
+    max-width: 1000%;
+    height: auto;
+}
+
+#notebook {
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: Lavender; /* Change the background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+#noteInput {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    margin-right: 5px; /* Add some space between buttons */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Add some styles for the clear button */
+#clearButton {
+    background-color: #ff0000; /* Red color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
